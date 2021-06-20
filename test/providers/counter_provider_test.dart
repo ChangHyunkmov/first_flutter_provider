@@ -21,7 +21,8 @@ void main() {
   });
 
   test('should reset count', () {
-    counterProvider.increment();
+    counterProvider.increment();    
+    counterProvider.increment();    
     counterProvider.reset();
 
     expect(counterProvider.count, 0);
